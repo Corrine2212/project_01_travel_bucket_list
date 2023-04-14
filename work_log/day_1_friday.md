@@ -12,14 +12,14 @@
 - set up project sql.file
 - set up run_sql.py file
 - set up app.py file <mark>(lines 3 and 4 commented out as controllers not created yet)</mark>
-- <mark>console.py partially set up (repositories need to be set up)</mark>
-- <mark>set up repository file BUT needs code inside</mark>
+- <mark>console.py partially set up - needs variable/objects to pass through</mark>
+- repositories completed
 - 
 
 ### Still to do:
-- 
-- 
-- 
+- controllers
+- dropdb then createdb
+- create templates
 - 
 
 
