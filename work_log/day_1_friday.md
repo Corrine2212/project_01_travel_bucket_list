@@ -14,17 +14,17 @@
 - set up app.py file <mark>(lines 3 and 4 commented out as controllers not created yet)</mark>
 - <mark>console.py partially set up - needs variable/objects to pass through</mark>
 - repositories completed
-- 
+- set up cities_controller.py
 
 ### Still to do:
-- controllers
+- controllers? does there need to be a country controller??
 - dropdb then createdb
 - create templates
 - 
 
 
 ### Have I learned anything new / takeaways?
-- 
+-
 
 ### Challenges
 - need to study up on everything for recap - do this until i feel more confident that I know what i'm doing and could explain what i'm doing to someone else.
@@ -37,3 +37,7 @@
 | :----:| ----------------------------- |
 | 1     | first commit - planning stage |
 | 2     | added planning diagrams       |
+| 3     | set up console.py, app.py etc.|
+| 4     | repositories completed        |
+| 5     | work log updated              |
+| 6     | controllers completed         |
