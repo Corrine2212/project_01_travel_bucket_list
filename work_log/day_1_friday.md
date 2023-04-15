@@ -1,4 +1,4 @@
-# Work Log - day 1 - Friday 14th
+# Work Log - day 1 - Friday 14th April
 
 ### What I did/worked on:
 - planned out the class diagrams, the object diagrams, the user needs, the use case diagram, sql diagram.
