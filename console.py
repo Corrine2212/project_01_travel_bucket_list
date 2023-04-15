@@ -9,5 +9,21 @@ country_repository.delete_all()
 city_repository.delete_all()
 
 # set up variables/objects to pass through
+country_1 = Country("Japan", True)
+country_repository.save(country_1)
+
+country_2 = Country("Scotland", False)
+country_repository.save(country_2)
+
+country_3 = Country("South Korea", False)
+country_repository.save(country_3)
+
+city_1 = City("Tokyo", country_1, False)
+city_repository.save(city_1)
+
+city_2 = City("Edinburgh", country_2, False)
+city_repository.save(city_2)
+
+city_3 = City("Seoul", country_3, False)
 
 pdb.set_trace()

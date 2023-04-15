@@ -9,10 +9,11 @@
     - cities folder containing: index.html, show.html, new.html, add.html
 - added style.css file
 - dropdb then createdb travel_bucket_list
+- added examples to console.py file
 
 ### Still to do:
-- add to console.py file
 - need to amend style.css file
+- run flask
 
 
 ### Have I learned anything new / takeaways?
