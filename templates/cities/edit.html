@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <form action="/cities/{{ city.id }}" method="POST">
+        <div>
+            <label for="city_name">City name</label>
+            <input type="text" id="city_name" placeholder="City name" required autofocus>
+        </div>
+
+        <button type="submit">Update City</button>
+    </form>
+
+{% endblock %}

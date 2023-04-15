@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<form action="/cities" method="POST">
+
+    <div>
+        <label for="city_name">City name</label>
+        <input type="text" id="city_name" placeholder="City name" required autofocus>
+    </div>
+
+    <button type="submit">Add city</button>
+</form>
+    
+{% endblock %}

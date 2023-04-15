@@ -1,0 +1,442 @@
+<mxfile host="app.diagrams.net" modified="2023-04-14T22:13:14.301Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="7PCphUeHGs30UyemsKZa" version="21.1.7" type="device" pages="8">
+  <diagram name="Page-1" id="uq9Cn0lQ5aJmIXJkYhUd">
+    <mxGraphModel dx="974" dy="832" grid="0" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="19" y="15" width="419.24" height="728" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 17px;&quot;&gt;TRAVEL BUCKET LIST&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="9" vertex="1">
+          <mxGeometry width="189.24" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Build an app to track someone&#39;s travel adventures" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=17;fontColor=#000000;" parent="9" vertex="1">
+          <mxGeometry x="2.999999999999986" y="28" width="416.24" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="&lt;b&gt;MVP:&lt;br&gt;&lt;br&gt;&lt;/b&gt;The app should allow the user to track countries and cities they want to visit and those they have visited.&lt;br&gt;&lt;br&gt;The user should be able to create and edit countries.&lt;br&gt;&lt;br&gt;Each country should have one or more cities to visit.&lt;br&gt;&lt;br&gt;The user should be able to create and delete entries for cities.&lt;br&gt;&lt;br&gt;The app should allow the user to mark destinations as visited or still to see." style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=17;fontColor=#000000;" parent="9" vertex="1">
+          <mxGeometry x="3" y="73" width="403" height="332" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="&lt;b&gt;POSSIBLE EXTENSIONS:&lt;/b&gt;&lt;br&gt;&lt;br&gt;Have separate pages for destinations visited and those still to visit.&lt;br&gt;&lt;br&gt;Add sights to the destination cities&lt;br&gt;&lt;br&gt;Search for destination by continent, city or country&lt;br&gt;&lt;br&gt;Any other ideas you might come up with" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=17;fontColor=#000000;" parent="9" vertex="1">
+          <mxGeometry x="3" y="396" width="403" height="332" as="geometry" />
+        </mxCell>
+        <mxCell id="zgXN1dkBxFWbzwqL6gmh-9" value="&lt;b&gt;PDA Reminder:&lt;/b&gt;&lt;br&gt;&lt;br&gt;- A Use Case Diagram&amp;nbsp;&amp;nbsp;&lt;br&gt;- A Class diagram&amp;nbsp;&amp;nbsp;&lt;br&gt;- An Object diagram&amp;nbsp;&amp;nbsp;&lt;br&gt;- An Activity Diagram&lt;br&gt;- A user sitemap&lt;br&gt;- Two wireframe designs&lt;br&gt;- An example of pseudocode for a function&lt;br&gt;- One of your projects where you have worked alone and attach the Github link" style="text;whiteSpace=wrap;html=1;fontSize=17;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="25.996287626378717" y="747.9971873563879" width="545" height="201" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="&lt;b&gt;FOLDER AND FILE STRUCTURE SETUP CHECKLIST:&lt;/b&gt;&lt;br&gt;&lt;br&gt;FILES:&lt;br&gt;- .flaskenv&lt;br&gt;- app.py&lt;br&gt;- console.py&amp;nbsp;&lt;br&gt;&lt;br&gt;FOLDERS:&lt;br&gt;- controllers&lt;br&gt;- db&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;- run_sql.py&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;- travel_bucket_list.sql&lt;br&gt;- models&lt;br&gt;- repositories&lt;br&gt;- static&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;style.css (file)&lt;br&gt;- templates&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;- base.html&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;- index.html&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;- sub folder?" style="text;whiteSpace=wrap;html=1;fontSize=17;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="890" y="389" width="551" height="417" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="&lt;b&gt;PROCESS:&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;PLANNING:&lt;/b&gt;&lt;br&gt;1. draw up class diagram&lt;br&gt;2. draw up object diagram&lt;br&gt;3. draw up relationship diagram&lt;br&gt;4. create wireframe&lt;br&gt;&lt;br&gt;&lt;b&gt;CODING:&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial; font-size: 18px;&quot;&gt;1. set up sql database file&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial; font-size: 18px;&quot;&gt;2. set up run_sql file&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial; font-size: 18px;&quot;&gt;3. set up flaskenv file&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial; font-size: 18px;&quot;&gt;4. set up app.py file&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial; font-size: 18px;&quot;&gt;5. define the routes to handle http requests&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial; font-size: 18px;&quot;&gt;6. create the html templates and css files e.g. base.html and index.html&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;fontSize=17;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="890" y="24" width="551" height="417" as="geometry" />
+        </mxCell>
+        <mxCell id="LxfKKSbLUVSgCxPCJQmF-11" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;CRUD:&lt;br&gt;def save()&lt;br&gt;def select_all()&lt;br&gt;def select()&lt;br&gt;def delete_all()&lt;br&gt;def delete()&lt;br&gt;def update()&lt;br&gt;def mark_visited() ??&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;strokeColor=#080808;strokeWidth=2;fontSize=20;fontColor=#0D0D0D;fillColor=#FFFFFF;gradientColor=none;align=left;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="516" y="65" width="156" height="219" as="geometry" />
+        </mxCell>
+        <mxCell id="LxfKKSbLUVSgCxPCJQmF-12" value="" style="edgeStyle=none;html=1;strokeColor=#030303;fontSize=20;fontColor=#0D0D0D;startArrow=classic;startFill=1;endArrow=none;endFill=0;" parent="1" target="LxfKKSbLUVSgCxPCJQmF-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="431" y="205" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LxfKKSbLUVSgCxPCJQmF-13" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;form&lt;br&gt;should it be a button that marks as visited when clicked?&lt;br&gt;or should it be a select/dropdown option&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;strokeColor=#080808;strokeWidth=2;fontSize=20;fontColor=#0D0D0D;fillColor=#FFFFFF;gradientColor=none;align=left;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="516" y="299" width="156" height="219" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="CLASS DIAGRAM" id="Ix_QAX9LO72x8v1IWzO3">
+    <mxGraphModel dx="974" dy="832" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8dRY-F0jYQ1wRQPYmVx6-1" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 17px;&quot;&gt;CLASS DIAGRAM&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="19" y="15" width="189.24" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WOlsyPQ5HuLEzpxh9SW7-1" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="198" y="171" width="394.76" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="gnjGk61oXQTfF7AuJJ5_-36" value="Country" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#080808;strokeWidth=2;fontColor=#000000;fillColor=default;gradientColor=none;" parent="WOlsyPQ5HuLEzpxh9SW7-1" vertex="1">
+          <mxGeometry width="160" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="gnjGk61oXQTfF7AuJJ5_-37" value="+ id: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=2;fontColor=#050505;" parent="gnjGk61oXQTfF7AuJJ5_-36" vertex="1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="gnjGk61oXQTfF7AuJJ5_-40" value="+ country_name: str" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=2;fontColor=#050505;" parent="gnjGk61oXQTfF7AuJJ5_-36" vertex="1">
+          <mxGeometry y="52" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="gnjGk61oXQTfF7AuJJ5_-41" value="+ list_of_cities: List" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=2;fontColor=#050505;" parent="gnjGk61oXQTfF7AuJJ5_-36" vertex="1">
+          <mxGeometry y="78" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="gnjGk61oXQTfF7AuJJ5_-38" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontColor=#050505;" parent="gnjGk61oXQTfF7AuJJ5_-36" vertex="1">
+          <mxGeometry y="104" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="gnjGk61oXQTfF7AuJJ5_-39" value="+ add_city(city_name): str&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=2;fontColor=#050505;" parent="gnjGk61oXQTfF7AuJJ5_-36" vertex="1">
+          <mxGeometry y="112" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="gnjGk61oXQTfF7AuJJ5_-49" value="+ remove_city(city)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=2;fontColor=#050505;" parent="gnjGk61oXQTfF7AuJJ5_-36" vertex="1">
+          <mxGeometry y="138" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="adRpRmmohWVE6YcozGBp-1" value="+ mark_country_visited()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=2;fontColor=#050505;" parent="gnjGk61oXQTfF7AuJJ5_-36" vertex="1">
+          <mxGeometry y="164" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="gnjGk61oXQTfF7AuJJ5_-42" value="City" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#080808;strokeWidth=2;fontColor=#000000;fillColor=default;gradientColor=none;" parent="WOlsyPQ5HuLEzpxh9SW7-1" vertex="1">
+          <mxGeometry x="234.76" width="160" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="gnjGk61oXQTfF7AuJJ5_-43" value="+ id: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=2;fontColor=#050505;" parent="gnjGk61oXQTfF7AuJJ5_-42" vertex="1">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="gnjGk61oXQTfF7AuJJ5_-44" value="+ city_name: str" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=2;fontColor=#050505;" parent="gnjGk61oXQTfF7AuJJ5_-42" vertex="1">
+          <mxGeometry y="52" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="gnjGk61oXQTfF7AuJJ5_-45" value="+ visited: bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=2;fontColor=#050505;" parent="gnjGk61oXQTfF7AuJJ5_-42" vertex="1">
+          <mxGeometry y="78" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="gnjGk61oXQTfF7AuJJ5_-48" value="+ country_id: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=2;fontColor=#050505;" parent="gnjGk61oXQTfF7AuJJ5_-42" vertex="1">
+          <mxGeometry y="104" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="gnjGk61oXQTfF7AuJJ5_-46" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;fontColor=#050505;" parent="gnjGk61oXQTfF7AuJJ5_-42" vertex="1">
+          <mxGeometry y="130" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="gnjGk61oXQTfF7AuJJ5_-47" value="+ mark_city_visited()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=2;fontColor=#050505;" parent="gnjGk61oXQTfF7AuJJ5_-42" vertex="1">
+          <mxGeometry y="138" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="adRpRmmohWVE6YcozGBp-2" value="" style="edgeStyle=none;html=1;fontColor=#FFFFFF;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#030303;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="WOlsyPQ5HuLEzpxh9SW7-1" source="gnjGk61oXQTfF7AuJJ5_-48" target="gnjGk61oXQTfF7AuJJ5_-41" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="OBJECT DIAGRAM" id="QE9bGtCtGhkz9ObzCs-U">
+    <mxGraphModel dx="974" dy="832" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="ooJr1-3GIrrP-AAkrP6R-0" />
+        <mxCell id="ooJr1-3GIrrP-AAkrP6R-1" parent="ooJr1-3GIrrP-AAkrP6R-0" />
+        <mxCell id="ooJr1-3GIrrP-AAkrP6R-2" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 17px;&quot;&gt;OBJECT DIAGRAM&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="ooJr1-3GIrrP-AAkrP6R-1" vertex="1">
+          <mxGeometry x="19" y="15" width="189.24" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eYRZAkqzk_5RL370_q8t-0" value="" style="edgeStyle=none;html=1;strokeColor=#030303;fontColor=#0D0D0D;exitX=0.007;exitY=0.644;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.995;entryY=0.652;entryDx=0;entryDy=0;entryPerimeter=0;" parent="ooJr1-3GIrrP-AAkrP6R-1" source="S58b2u-60u6NQb4Y_MVf-2" target="q39fSWTPVXmNSauRYLEk-0" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="386" y="224" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S58b2u-60u6NQb4Y_MVf-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;Tokyo:City&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;id = 1&lt;br&gt;city_name = Tokyo&lt;br&gt;visited = True&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;country_id = 1&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeColor=#080808;strokeWidth=2;fontColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;" parent="ooJr1-3GIrrP-AAkrP6R-1" vertex="1">
+          <mxGeometry x="446" y="143" width="160" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="q39fSWTPVXmNSauRYLEk-0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;Japan:Country&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;id = 1&lt;br&gt;country_name = Japan&lt;br&gt;visited = True&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;list_of_cities = [City(id=1),&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;City(id=2)]&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeColor=#080808;strokeWidth=2;fontColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;" parent="ooJr1-3GIrrP-AAkrP6R-1" vertex="1">
+          <mxGeometry x="201" y="211" width="189" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="nfcWD_kexvznKWrhYqOc-1" value="" style="edgeStyle=none;html=1;strokeColor=#030303;fontColor=#0D0D0D;exitX=0.006;exitY=0.66;exitDx=0;exitDy=0;exitPerimeter=0;" parent="ooJr1-3GIrrP-AAkrP6R-1" source="nfcWD_kexvznKWrhYqOc-0" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="444" y="369" as="sourcePoint" />
+            <mxPoint x="389" y="301" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nfcWD_kexvznKWrhYqOc-0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;Osaka:City&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;id = 2&lt;br&gt;city_name = Osaka&lt;br&gt;visited = True&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;country_id = 1&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeColor=#080808;strokeWidth=2;fontColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;" parent="ooJr1-3GIrrP-AAkrP6R-1" vertex="1">
+          <mxGeometry x="446" y="283" width="160" height="126" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="SQL DIAGRAM" id="HKfjLjC2NP8CgnoZvoCp">
+    <mxGraphModel dx="974" dy="832" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="583" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="cOBRP7fztqVtmhEjjYHe-0" />
+        <mxCell id="cOBRP7fztqVtmhEjjYHe-1" parent="cOBRP7fztqVtmhEjjYHe-0" />
+        <mxCell id="cOBRP7fztqVtmhEjjYHe-2" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 17px;&quot;&gt;SQL RELATIONAL DIAGRAM&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="cOBRP7fztqVtmhEjjYHe-1" vertex="1">
+          <mxGeometry x="19" y="15" width="252" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cOBRP7fztqVtmhEjjYHe-3" value="" style="edgeStyle=none;html=1;strokeColor=#030303;fontColor=#0D0D0D;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=ERmany;startFill=0;" parent="cOBRP7fztqVtmhEjjYHe-1" source="cOBRP7fztqVtmhEjjYHe-4" target="cOBRP7fztqVtmhEjjYHe-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="369" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cOBRP7fztqVtmhEjjYHe-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;City&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;id&lt;br&gt;city_name&lt;br&gt;visited&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;country_id&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeColor=#080808;strokeWidth=2;fontColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;" parent="cOBRP7fztqVtmhEjjYHe-1" vertex="1">
+          <mxGeometry x="433" y="182" width="160" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="cOBRP7fztqVtmhEjjYHe-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;text-decoration:underline;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;Country&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;id&lt;br&gt;country_name&lt;br&gt;visited&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;list_of_cities&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;font color=&quot;#0d0d0d&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;strokeColor=#080808;strokeWidth=2;fontColor=#FFFFFF;fillColor=#FFFFFF;gradientColor=none;" parent="cOBRP7fztqVtmhEjjYHe-1" vertex="1">
+          <mxGeometry x="184" y="182" width="189" height="126" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="A USE CASE DIAGRAM" id="ibZjkoGNOpWDLQXJGtEu">
+    <mxGraphModel dx="974" dy="832" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="SeAEfNAvI1aMIs39xB7k-0" />
+        <mxCell id="SeAEfNAvI1aMIs39xB7k-1" parent="SeAEfNAvI1aMIs39xB7k-0" />
+        <mxCell id="SeAEfNAvI1aMIs39xB7k-2" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 17px;&quot;&gt;A USE CASE DIAGRAM&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="SeAEfNAvI1aMIs39xB7k-1" vertex="1">
+          <mxGeometry x="19" y="15" width="208" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-23" value="" style="group" parent="SeAEfNAvI1aMIs39xB7k-1" vertex="1" connectable="0">
+          <mxGeometry x="179" y="162" width="436" height="713" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-4" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#080808;strokeWidth=2;fontSize=13;fontColor=#0D0D0D;fillColor=#FFFFFF;gradientColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" parent="hzjoXZUbkKF0N8MTXE-i-23" vertex="1">
+          <mxGeometry x="144" width="292" height="713" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-1" value="Site user" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeColor=#080808;strokeWidth=2;fontSize=13;fontColor=#0D0D0D;fillColor=#FFFFFF;gradientColor=none;" parent="hzjoXZUbkKF0N8MTXE-i-23" vertex="1">
+          <mxGeometry y="320" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-3" value="View countries" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#080808;strokeWidth=2;fontSize=13;fontColor=#0D0D0D;fillColor=#FFFFFF;gradientColor=none;" parent="hzjoXZUbkKF0N8MTXE-i-23" vertex="1">
+          <mxGeometry x="218" y="81" width="140" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-15" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#030303;fontSize=13;fontColor=#0D0D0D;startArrow=none;startFill=0;endArrow=none;endFill=0;strokeWidth=2;" parent="hzjoXZUbkKF0N8MTXE-i-23" source="hzjoXZUbkKF0N8MTXE-i-1" target="hzjoXZUbkKF0N8MTXE-i-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-5" value="&lt;b style=&quot;font-size: 18px;&quot;&gt;Online Travel Bucket List&lt;/b&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=2;fontSize=18;fontColor=#0D0D0D;" parent="hzjoXZUbkKF0N8MTXE-i-23" vertex="1">
+          <mxGeometry x="201" y="26" width="174" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-6" value="Add country" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#080808;strokeWidth=2;fontSize=13;fontColor=#0D0D0D;fillColor=#FFFFFF;gradientColor=none;" parent="hzjoXZUbkKF0N8MTXE-i-23" vertex="1">
+          <mxGeometry x="218" y="153" width="140" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-16" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#030303;strokeWidth=2;fontSize=13;fontColor=#0D0D0D;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="hzjoXZUbkKF0N8MTXE-i-23" source="hzjoXZUbkKF0N8MTXE-i-1" target="hzjoXZUbkKF0N8MTXE-i-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-7" value="Edit country" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#080808;strokeWidth=2;fontSize=13;fontColor=#0D0D0D;fillColor=#FFFFFF;gradientColor=none;" parent="hzjoXZUbkKF0N8MTXE-i-23" vertex="1">
+          <mxGeometry x="218" y="226" width="140" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-17" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#030303;strokeWidth=2;fontSize=13;fontColor=#0D0D0D;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="hzjoXZUbkKF0N8MTXE-i-23" source="hzjoXZUbkKF0N8MTXE-i-1" target="hzjoXZUbkKF0N8MTXE-i-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-8" value="Delete country" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#080808;strokeWidth=2;fontSize=13;fontColor=#0D0D0D;fillColor=#FFFFFF;gradientColor=none;" parent="hzjoXZUbkKF0N8MTXE-i-23" vertex="1">
+          <mxGeometry x="218" y="298" width="140" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-18" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#030303;strokeWidth=2;fontSize=13;fontColor=#0D0D0D;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="hzjoXZUbkKF0N8MTXE-i-23" source="hzjoXZUbkKF0N8MTXE-i-1" target="hzjoXZUbkKF0N8MTXE-i-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-9" value="Add city" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#080808;strokeWidth=2;fontSize=13;fontColor=#0D0D0D;fillColor=#FFFFFF;gradientColor=none;" parent="hzjoXZUbkKF0N8MTXE-i-23" vertex="1">
+          <mxGeometry x="218" y="371" width="140" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-19" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#030303;strokeWidth=2;fontSize=13;fontColor=#0D0D0D;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="hzjoXZUbkKF0N8MTXE-i-23" source="hzjoXZUbkKF0N8MTXE-i-1" target="hzjoXZUbkKF0N8MTXE-i-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-10" value="Delete city" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#080808;strokeWidth=2;fontSize=13;fontColor=#0D0D0D;fillColor=#FFFFFF;gradientColor=none;" parent="hzjoXZUbkKF0N8MTXE-i-23" vertex="1">
+          <mxGeometry x="218" y="443" width="140" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-20" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#030303;strokeWidth=2;fontSize=13;fontColor=#0D0D0D;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="hzjoXZUbkKF0N8MTXE-i-23" source="hzjoXZUbkKF0N8MTXE-i-1" target="hzjoXZUbkKF0N8MTXE-i-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-11" value="Mark as visited" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#080808;strokeWidth=2;fontSize=13;fontColor=#0D0D0D;fillColor=#FFFFFF;gradientColor=none;" parent="hzjoXZUbkKF0N8MTXE-i-23" vertex="1">
+          <mxGeometry x="218" y="516" width="140" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-21" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#030303;strokeWidth=2;fontSize=13;fontColor=#0D0D0D;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="hzjoXZUbkKF0N8MTXE-i-23" source="hzjoXZUbkKF0N8MTXE-i-1" target="hzjoXZUbkKF0N8MTXE-i-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-12" value="Mark as unvisited" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#080808;strokeWidth=2;fontSize=13;fontColor=#0D0D0D;fillColor=#FFFFFF;gradientColor=none;" parent="hzjoXZUbkKF0N8MTXE-i-23" vertex="1">
+          <mxGeometry x="218" y="588" width="140" height="63" as="geometry" />
+        </mxCell>
+        <mxCell id="hzjoXZUbkKF0N8MTXE-i-22" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#030303;strokeWidth=2;fontSize=13;fontColor=#0D0D0D;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="hzjoXZUbkKF0N8MTXE-i-23" source="hzjoXZUbkKF0N8MTXE-i-1" target="hzjoXZUbkKF0N8MTXE-i-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ACTIVITY DIAGRAM" id="X02lvtZtKqk-mx4_li_c">
+    <mxGraphModel dx="2940" dy="1513" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="to8ROdZEQAokKiuRpRZ3-0" />
+        <mxCell id="to8ROdZEQAokKiuRpRZ3-1" parent="to8ROdZEQAokKiuRpRZ3-0" />
+        <mxCell id="to8ROdZEQAokKiuRpRZ3-2" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 17px;&quot;&gt;ACTIVITY DIAGRAM&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="to8ROdZEQAokKiuRpRZ3-1" vertex="1">
+          <mxGeometry x="19" y="15" width="189.24" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aYyVjT0GMi4APaK0vRyl-0" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#080808;strokeWidth=2;fontSize=18;fontColor=#0D0D0D;fillColor=#FFFFFF;gradientColor=none;" parent="to8ROdZEQAokKiuRpRZ3-1" vertex="1">
+          <mxGeometry x="1865.9" y="221" width="903" height="1219" as="geometry" />
+        </mxCell>
+        <mxCell id="aYyVjT0GMi4APaK0vRyl-1" value="" style="endArrow=none;html=1;strokeColor=#030303;strokeWidth=2;fontSize=18;fontColor=#0D0D0D;exitX=-0.001;exitY=0.111;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.996;entryY=0.111;entryDx=0;entryDy=0;entryPerimeter=0;" parent="to8ROdZEQAokKiuRpRZ3-1" source="aYyVjT0GMi4APaK0vRyl-0" target="aYyVjT0GMi4APaK0vRyl-0" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2570.9" y="612" as="sourcePoint" />
+            <mxPoint x="2620.9" y="562" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aYyVjT0GMi4APaK0vRyl-4" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cdn-images.visual-paradigm.com/guide/uml/what-is-activity-diagram/02-basic-activity-diagram.png;" parent="to8ROdZEQAokKiuRpRZ3-1" vertex="1">
+          <mxGeometry x="1047" y="125" width="952.17" height="1093" as="geometry" />
+        </mxCell>
+        <mxCell id="aYyVjT0GMi4APaK0vRyl-15" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;b id=&quot;docs-internal-guid-fd8eb02f-7fff-dabb-9104-c6c37bfbe435&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;img src=&quot;https://lh5.googleusercontent.com/l1KzVkenWz39wRlxDrnGVHxTod4Lbbe-KNuCJwAbCme7Laz6QacP6g4cgAk25pTAQIkQfzXuwO737hewUKixdGnfEkORFNu3jZM2Ai4ytcckKoneRaCXzTVaqoI6XM_1lcQsMxrJwTugV10GbKsaCWXZ=s2048&quot; height=&quot;379px;&quot; width=&quot;342px;&quot;&gt;&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;fontSize=18;fontColor=#0D0D0D;" parent="to8ROdZEQAokKiuRpRZ3-1" vertex="1">
+          <mxGeometry x="558" y="15" width="367" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="aYyVjT0GMi4APaK0vRyl-17" value="" style="group" parent="to8ROdZEQAokKiuRpRZ3-1" vertex="1" connectable="0">
+          <mxGeometry x="660" y="500" width="178" height="527" as="geometry" />
+        </mxCell>
+        <mxCell id="aYyVjT0GMi4APaK0vRyl-7" value="Add a country" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;labelBackgroundColor=none;strokeColor=#2e1515;strokeWidth=2;fontSize=18;fontColor=#0D0D0D;fillColor=#FFFFFF;gradientColor=none;" parent="aYyVjT0GMi4APaK0vRyl-17" vertex="1">
+          <mxGeometry x="19" y="90" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aYyVjT0GMi4APaK0vRyl-8" value="Enter country name" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;labelBackgroundColor=none;strokeColor=#2e1515;strokeWidth=2;fontSize=18;fontColor=#0D0D0D;fillColor=#FFFFFF;gradientColor=none;" parent="aYyVjT0GMi4APaK0vRyl-17" vertex="1">
+          <mxGeometry y="208" width="178" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="aYyVjT0GMi4APaK0vRyl-11" value="Enter cities" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;labelBackgroundColor=none;strokeColor=#2e1515;strokeWidth=2;fontSize=18;fontColor=#0D0D0D;fillColor=#FFFFFF;gradientColor=none;" parent="aYyVjT0GMi4APaK0vRyl-17" vertex="1">
+          <mxGeometry y="341" width="178" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="aYyVjT0GMi4APaK0vRyl-13" value="Save country" style="html=1;align=center;verticalAlign=middle;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;labelBackgroundColor=none;strokeColor=#2e1515;strokeWidth=2;fontSize=18;fontColor=#0D0D0D;fillColor=#FFFFFF;gradientColor=none;" parent="aYyVjT0GMi4APaK0vRyl-17" vertex="1">
+          <mxGeometry y="474" width="178" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="aYyVjT0GMi4APaK0vRyl-16" value="" style="group" parent="aYyVjT0GMi4APaK0vRyl-17" vertex="1" connectable="0">
+          <mxGeometry x="74" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aYyVjT0GMi4APaK0vRyl-3" value="" style="ellipse;fillColor=strokeColor;strokeColor=#080808;strokeWidth=2;fontSize=18;fontColor=#0D0D0D;" parent="aYyVjT0GMi4APaK0vRyl-16" vertex="1">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aYyVjT0GMi4APaK0vRyl-6" value="" style="edgeStyle=none;html=1;strokeColor=#030303;strokeWidth=2;fontSize=18;fontColor=#0D0D0D;startArrow=none;startFill=0;endArrow=classicThin;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="aYyVjT0GMi4APaK0vRyl-17" source="aYyVjT0GMi4APaK0vRyl-3" target="aYyVjT0GMi4APaK0vRyl-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-229" y="-59" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aYyVjT0GMi4APaK0vRyl-9" value="" style="edgeStyle=none;html=1;strokeColor=#030303;strokeWidth=2;fontSize=18;fontColor=#0D0D0D;startArrow=none;startFill=0;endArrow=classicThin;endFill=1;" parent="aYyVjT0GMi4APaK0vRyl-17" source="aYyVjT0GMi4APaK0vRyl-7" target="aYyVjT0GMi4APaK0vRyl-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aYyVjT0GMi4APaK0vRyl-12" value="" style="edgeStyle=none;html=1;strokeColor=#030303;strokeWidth=2;fontSize=18;fontColor=#0D0D0D;startArrow=none;startFill=0;endArrow=classicThin;endFill=1;" parent="aYyVjT0GMi4APaK0vRyl-17" source="aYyVjT0GMi4APaK0vRyl-8" target="aYyVjT0GMi4APaK0vRyl-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aYyVjT0GMi4APaK0vRyl-14" value="" style="edgeStyle=none;html=1;strokeColor=#030303;strokeWidth=2;fontSize=18;fontColor=#0D0D0D;startArrow=none;startFill=0;endArrow=classicThin;endFill=1;" parent="aYyVjT0GMi4APaK0vRyl-17" source="aYyVjT0GMi4APaK0vRyl-11" target="aYyVjT0GMi4APaK0vRyl-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5l6167H_jIiZFzWXHQv--1" value="" style="edgeStyle=none;html=1;strokeColor=#030303;strokeWidth=2;fontSize=18;fontColor=#0D0D0D;startArrow=none;startFill=0;endArrow=classicThin;endFill=1;" parent="to8ROdZEQAokKiuRpRZ3-1" source="aYyVjT0GMi4APaK0vRyl-19" target="5l6167H_jIiZFzWXHQv--0" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aYyVjT0GMi4APaK0vRyl-19" value="" style="ellipse;fillColor=strokeColor;strokeColor=#080808;strokeWidth=2;fontSize=18;fontColor=#0D0D0D;" parent="to8ROdZEQAokKiuRpRZ3-1" vertex="1">
+          <mxGeometry x="203" y="115" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aYyVjT0GMi4APaK0vRyl-20" value="user visits website&lt;br&gt;they click the button on homepage that leads them to the dashboard&lt;br&gt;if empty they can add a country&amp;nbsp;&lt;br&gt;they have options:&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;they can view&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;they can click to view single country&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;they can click to ad" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;strokeWidth=2;fontSize=18;fontColor=#0D0D0D;" parent="to8ROdZEQAokKiuRpRZ3-1" vertex="1">
+          <mxGeometry x="897" y="258" width="346.43" height="385" as="geometry" />
+        </mxCell>
+        <mxCell id="5l6167H_jIiZFzWXHQv--5" value="" style="edgeStyle=none;html=1;strokeColor=#030303;strokeWidth=2;fontSize=18;fontColor=#000000;startArrow=none;startFill=0;endArrow=classicThin;endFill=1;" parent="to8ROdZEQAokKiuRpRZ3-1" source="5l6167H_jIiZFzWXHQv--0" target="5l6167H_jIiZFzWXHQv--4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5l6167H_jIiZFzWXHQv--0" value="&lt;font color=&quot;#000000&quot;&gt;Click &#39;start exploring today!&#39; button&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fillColor=none;strokeWidth=2;strokeColor=#000000;spacingLeft=12;spacingRight=12;" parent="to8ROdZEQAokKiuRpRZ3-1" vertex="1">
+          <mxGeometry x="107.5" y="191" width="221" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5l6167H_jIiZFzWXHQv--7" value="" style="edgeStyle=none;html=1;strokeColor=#030303;strokeWidth=2;fontSize=18;fontColor=#000000;startArrow=none;startFill=0;endArrow=classicThin;endFill=1;" parent="to8ROdZEQAokKiuRpRZ3-1" source="5l6167H_jIiZFzWXHQv--4" target="5l6167H_jIiZFzWXHQv--6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5l6167H_jIiZFzWXHQv--4" value="&lt;font color=&quot;#000000&quot;&gt;Add new country&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fillColor=none;strokeWidth=2;strokeColor=#000000;spacingLeft=12;spacingRight=12;" parent="to8ROdZEQAokKiuRpRZ3-1" vertex="1">
+          <mxGeometry x="107.5" y="331" width="221" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5l6167H_jIiZFzWXHQv--12" value="" style="edgeStyle=none;html=1;strokeColor=#030303;strokeWidth=2;fontSize=18;fontColor=#000000;startArrow=none;startFill=0;endArrow=classicThin;endFill=1;" parent="to8ROdZEQAokKiuRpRZ3-1" source="5l6167H_jIiZFzWXHQv--6" target="5l6167H_jIiZFzWXHQv--11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5l6167H_jIiZFzWXHQv--14" value="" style="edgeStyle=none;html=1;strokeColor=#030303;strokeWidth=2;fontSize=18;fontColor=#000000;startArrow=none;startFill=0;endArrow=classicThin;endFill=1;" parent="to8ROdZEQAokKiuRpRZ3-1" source="5l6167H_jIiZFzWXHQv--6" target="5l6167H_jIiZFzWXHQv--13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5l6167H_jIiZFzWXHQv--16" value="" style="edgeStyle=none;html=1;strokeColor=#030303;strokeWidth=2;fontSize=18;fontColor=#000000;startArrow=none;startFill=0;endArrow=classicThin;endFill=1;" parent="to8ROdZEQAokKiuRpRZ3-1" source="5l6167H_jIiZFzWXHQv--6" target="5l6167H_jIiZFzWXHQv--15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5l6167H_jIiZFzWXHQv--6" value="" style="rhombus;whiteSpace=wrap;html=1;fontSize=18;fillColor=none;strokeColor=#000000;rounded=1;strokeWidth=2;spacingLeft=12;spacingRight=12;" parent="to8ROdZEQAokKiuRpRZ3-1" vertex="1">
+          <mxGeometry x="178" y="430.5" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5l6167H_jIiZFzWXHQv--11" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;view country&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=18;fillColor=none;strokeColor=#000000;rounded=1;strokeWidth=2;spacingLeft=12;spacingRight=12;" parent="to8ROdZEQAokKiuRpRZ3-1" vertex="1">
+          <mxGeometry x="318" y="420.5" width="211" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5l6167H_jIiZFzWXHQv--13" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;edit country&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=18;fillColor=none;strokeColor=#000000;rounded=1;strokeWidth=2;spacingLeft=12;spacingRight=12;" parent="to8ROdZEQAokKiuRpRZ3-1" vertex="1">
+          <mxGeometry x="113.5" y="541" width="204.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5l6167H_jIiZFzWXHQv--19" value="" style="edgeStyle=none;html=1;strokeColor=#030303;strokeWidth=2;fontSize=18;fontColor=#000000;startArrow=none;startFill=0;endArrow=classicThin;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="to8ROdZEQAokKiuRpRZ3-1" source="5l6167H_jIiZFzWXHQv--15" target="5l6167H_jIiZFzWXHQv--4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="19.5" y="310.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="20" y="361" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5l6167H_jIiZFzWXHQv--15" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;delete country&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fillColor=none;strokeColor=#000000;strokeWidth=2;spacingLeft=12;spacingRight=12;" parent="to8ROdZEQAokKiuRpRZ3-1" vertex="1">
+          <mxGeometry x="-79" y="420.5" width="197" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5l6167H_jIiZFzWXHQv--17" value="takes them to dashboard" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;strokeWidth=2;fontSize=18;fontColor=#000000;" parent="to8ROdZEQAokKiuRpRZ3-1" vertex="1">
+          <mxGeometry x="223" y="276" width="221.43" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="USER SITEMAP" id="pke_oAYm3DejoUi1Nr6S">
+    <mxGraphModel dx="974" dy="832" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="UabO_HS7i-46CFVheEcG-0" />
+        <mxCell id="UabO_HS7i-46CFVheEcG-1" parent="UabO_HS7i-46CFVheEcG-0" />
+        <mxCell id="UabO_HS7i-46CFVheEcG-2" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 17px;&quot;&gt;USER SITEMAP&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="UabO_HS7i-46CFVheEcG-1" vertex="1">
+          <mxGeometry x="19" y="15" width="189.24" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="USER NEEDS" id="h9w69Fa_y6wHvfw5RhGZ">
+    <mxGraphModel dx="1784" dy="1513" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XWsjtl-WhHT1egKezB53-10" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;strokeColor=#080808;strokeWidth=2;fontColor=#0D0D0D;fillColor=#FFFFFF;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="81" y="109" width="996" height="589.307755903764" as="geometry" />
+        </mxCell>
+        <mxCell id="XWsjtl-WhHT1egKezB53-11" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#080808;strokeWidth=2;fontColor=#0D0D0D;" parent="XWsjtl-WhHT1egKezB53-10" vertex="1">
+          <mxGeometry width="996" height="106" as="geometry" />
+        </mxCell>
+        <mxCell id="XWsjtl-WhHT1egKezB53-12" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 28px;&quot;&gt;As a...&lt;/b&gt;&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeColor=#080808;strokeWidth=2;fontColor=#0D0D0D;" parent="XWsjtl-WhHT1egKezB53-11" vertex="1">
+          <mxGeometry width="331" height="106" as="geometry">
+            <mxRectangle width="331" height="106" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWsjtl-WhHT1egKezB53-13" value="&lt;b style=&quot;font-size: 28px;&quot;&gt;I want to...&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeColor=#080808;strokeWidth=2;fontColor=#0D0D0D;" parent="XWsjtl-WhHT1egKezB53-11" vertex="1">
+          <mxGeometry x="331" width="334" height="106" as="geometry">
+            <mxRectangle width="334" height="106" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWsjtl-WhHT1egKezB53-14" value="&lt;b style=&quot;font-size: 28px;&quot;&gt;So that...&lt;/b&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeColor=#080808;strokeWidth=2;fontColor=#0D0D0D;" parent="XWsjtl-WhHT1egKezB53-11" vertex="1">
+          <mxGeometry x="665" width="331" height="106" as="geometry">
+            <mxRectangle width="331" height="106" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWsjtl-WhHT1egKezB53-19" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#080808;strokeWidth=2;fontColor=#0D0D0D;" parent="XWsjtl-WhHT1egKezB53-10" vertex="1">
+          <mxGeometry y="106" width="996" height="161" as="geometry" />
+        </mxCell>
+        <mxCell id="XWsjtl-WhHT1egKezB53-20" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;an on the go traveller&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeColor=#080808;strokeWidth=2;fontColor=#0D0D0D;" parent="XWsjtl-WhHT1egKezB53-19" vertex="1">
+          <mxGeometry width="331" height="161" as="geometry">
+            <mxRectangle width="331" height="161" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWsjtl-WhHT1egKezB53-21" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;be able to quickly add new countries and cities to an app&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeColor=#080808;strokeWidth=2;fontColor=#0D0D0D;spacingLeft=12;spacingRight=12;" parent="XWsjtl-WhHT1egKezB53-19" vertex="1">
+          <mxGeometry x="331" width="334" height="161" as="geometry">
+            <mxRectangle width="334" height="161" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWsjtl-WhHT1egKezB53-22" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;I can easily keep track of all the places that I want to visit&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeColor=#080808;strokeWidth=2;fontColor=#0D0D0D;" parent="XWsjtl-WhHT1egKezB53-19" vertex="1">
+          <mxGeometry x="665" width="331" height="161" as="geometry">
+            <mxRectangle width="331" height="161" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWsjtl-WhHT1egKezB53-27" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#080808;strokeWidth=2;fontColor=#0D0D0D;" parent="XWsjtl-WhHT1egKezB53-10" vertex="1">
+          <mxGeometry y="267" width="996" height="161" as="geometry" />
+        </mxCell>
+        <mxCell id="XWsjtl-WhHT1egKezB53-28" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;an on the go traveller&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeColor=#080808;strokeWidth=2;fontColor=#0D0D0D;" parent="XWsjtl-WhHT1egKezB53-27" vertex="1">
+          <mxGeometry width="331" height="161" as="geometry">
+            <mxRectangle width="331" height="161" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWsjtl-WhHT1egKezB53-29" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;be able to view all the places that I want to visit in one page&amp;nbsp;&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeColor=#080808;strokeWidth=2;fontColor=#0D0D0D;spacingLeft=12;spacingRight=12;" parent="XWsjtl-WhHT1egKezB53-27" vertex="1">
+          <mxGeometry x="331" width="334" height="161" as="geometry">
+            <mxRectangle width="334" height="161" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWsjtl-WhHT1egKezB53-30" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;it&#39;s easy to see at a glance all the places that i want to visit&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeColor=#080808;strokeWidth=2;fontColor=#0D0D0D;" parent="XWsjtl-WhHT1egKezB53-27" vertex="1">
+          <mxGeometry x="665" width="331" height="161" as="geometry">
+            <mxRectangle width="331" height="161" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWsjtl-WhHT1egKezB53-31" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#080808;strokeWidth=2;fontColor=#0D0D0D;" parent="XWsjtl-WhHT1egKezB53-10" vertex="1">
+          <mxGeometry y="428" width="996" height="161" as="geometry" />
+        </mxCell>
+        <mxCell id="XWsjtl-WhHT1egKezB53-32" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;an on the go traveller&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeColor=#080808;strokeWidth=2;fontColor=#0D0D0D;" parent="XWsjtl-WhHT1egKezB53-31" vertex="1">
+          <mxGeometry width="331" height="161" as="geometry">
+            <mxRectangle width="331" height="161" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWsjtl-WhHT1egKezB53-33" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;be able to edit or remove the countries that i&#39;ve added to the app&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeColor=#080808;strokeWidth=2;fontColor=#0D0D0D;spacingLeft=12;spacingRight=12;" parent="XWsjtl-WhHT1egKezB53-31" vertex="1">
+          <mxGeometry x="331" width="334" height="161" as="geometry">
+            <mxRectangle width="334" height="161" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XWsjtl-WhHT1egKezB53-34" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;I can edit any mistakes that i&#39;ve made e.g. spelling error or if i&#39;ve changed my mind about visiting a place.&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeColor=#080808;strokeWidth=2;fontColor=#0D0D0D;" parent="XWsjtl-WhHT1egKezB53-31" vertex="1">
+          <mxGeometry x="665" width="331" height="161" as="geometry">
+            <mxRectangle width="331" height="161" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rsPoM5zaCDHI3cHAllC--1" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 17px;&quot;&gt;USER NEEDS&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="19" y="15" width="189.24" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

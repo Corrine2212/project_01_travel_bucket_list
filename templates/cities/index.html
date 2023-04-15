@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+    
+{% for city in all_cities %}
+    <div class="city">
+        <div class="content">
+            <a href="/cities/{{ city.id }}">{{ city.name }}</a>
+
+            <div class="name">
+                more information to be added
+            </div>
+
+            <div class="buttons">
+                <form class="delete-form" action="/cities/{{ city.id }}/delete" method="POST">
+                    <button class="trash-button">DELETE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endfor %}
+
+{% endblock %}
