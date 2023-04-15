@@ -7,10 +7,12 @@
     - homepage index.html
     - countries folder containing: index.html, show.html, new.html, add.html
     - cities folder containing: index.html, show.html, new.html, add.html
+- added style.css file
+- dropdb then createdb travel_bucket_list
 
 ### Still to do:
-- dropdb then createdb
 - add to console.py file
+- need to amend style.css file
 
 
 ### Have I learned anything new / takeaways?
@@ -26,5 +28,5 @@
 | Order | Commit message                |
 | :----:| ----------------------------- |
 | 7     | added controller and templates|
-|       |                               |
-|       |                               |
+| 8     | pushed again as files missing |
+| 9     | added style.css and createdb  |
