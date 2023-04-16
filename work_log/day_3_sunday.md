@@ -4,10 +4,13 @@
 - ran flask and everything went to shit
 - fixed the db error - my database now works and tables have been created
 - fixed silly errors in the controllers and repositories
+- worked on css and html
+- 
 
 ### Still to do:
-- need to amend style.css file
-- write tests
+- fix edit function - it's not displaying the current information and also not saving it to that country.
+- fix show single country page - not displaying the list of cities and no visited select box.
+- add button to dashboard/list of all destinations
 
 ### Have I learned anything new / takeaways?
 - 

@@ -1,12 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<header>
-    <h1>Add a new desitination</h1>
-</header>
+<div class="add-wrapper">
+    <h1>Add a new destination</h1>
+
 
 <form action="/countries" method="POST">
-
     <div>
         <label for="country_name">Where to?</label>
         <input type="text" id="country_name" name="country_name" placeholder="Which country? e.g. Japan, Scotland" required autofocus>
@@ -28,4 +27,5 @@
     <button id="submit" type="submit">Add destination</button>
 </form>
     
+</div>
 {% endblock %}

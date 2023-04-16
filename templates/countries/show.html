@@ -1,14 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
     
-<section>
+<div class="country">
+    <div class="content">
+
     <h2>{{ country.country_name }}</h2>
     <hr>
 
-    <div class="country-details">
-        {# <p>
-            list of city names
-        </p> #}
+{# !not displaying list #}
+    <ul>
+        {% for city in cities  %}
+        <li>{{city.city_name}}</li>
+        {% endfor %}
+    </ul>
+    <p>show list of cities here</p>
+    <hr>
+    <p>add link to cities / edit and delete buttons</p>
+    
+
         <div class="buttons">
             <form class="edit-form" action="/countries/{{ country.id }}/edit">
                 <button class="edit-button">EDIT</button>
@@ -18,9 +27,8 @@
             </form>
         </div>
     </div>
+</div>
 
-</section>
-
-{% endblock %}
+{% endblock content %}
 
 

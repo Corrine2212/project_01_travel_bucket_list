@@ -1,16 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
-    
+
 {% for country in all_countries %}
+
     <div class="country">
         <div class="content">
-            <a href="/countries/{{ country.id }}">{{ country.country_name }}</a>
-
-            <div class="name">
-                <p>list of cities</p>
-            </div>
+            <i class="fa fa-thumb-tack fa-2x" aria-hidden="true"></i>
+            <h1>{{ country.country_name }}</h1>
+            <p>try to display list of cities and have edit and delete option</p>
+            <ul>
+                {% for city in cities %}
+                    <li class="list-of-cities" >{{ city.city_name }}</li>
+                {% endfor %}
+            </ul>
 
                 <div class="buttons">
+                    <form class="view-more" action="/countries/{{ country.id }}">
+                        <button class="view-button">VIEW</button>
+                    </form>
                     <form class="edit-form" action="/countries/{{ country.id }}/edit">
                         <button class="edit-button">EDIT</button>
                     </form>
@@ -20,8 +27,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    
-{% endfor %}
 
-{% endblock %}
+{% endfor %}
+{% endblock content %}

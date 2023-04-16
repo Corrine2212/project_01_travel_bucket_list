@@ -33,6 +33,23 @@ section {
     margin-bottom: 20px; 
 }
 
+/* .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0 auto;
+
+} */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
 .country {
     border: 1px solid #565656;
     border-radius: 10px;
@@ -40,11 +57,10 @@ section {
     min-height: 68px;
     padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
     line-height: 18px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 .welcome-message {
@@ -103,12 +119,18 @@ input, select, button {
     color: red;
 }
 
-.trash-button:hover, .edit-button:hover {
+.trash-button:hover, .edit-button:hover, .view-button:hover {
     cursor: pointer;
     color: grey;
 }
 
 .edit-button {
+    display: contents;
+    font-size: 65%;
+    color: #57aee5;
+}
+
+.view-button {
     display: contents;
     font-size: 65%;
     color: #57aee5;
@@ -120,7 +142,11 @@ input, select, button {
     background-color: #57aee5;
     color: white;
     cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+
 }
+
 
 #submit:hover {
     background-color: #3b799f;
@@ -131,6 +157,59 @@ input, select, button {
 .delete-form {
     display: inline;
 }
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 25px;
+    border: 2px solid white;
+    color: white;
+    /* text-shadow: 1px 0px 1px #848383, 0px 1px 1px #959595; */
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+}
+
+button:hover {
+    background: #57aee5;
+}
+/* button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor:pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #009688;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;   
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+
+}
+
+button:hover {
+    border: none;
+} */
 
 /* menu stylings */
 .logo {
@@ -194,11 +273,10 @@ input, select, button {
     width: 100%;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 300px;
-    margin: 0 auto;
+.fa.fa-thumb-tack{
+    color: lightcoral;
+    display: contents;
+    /* font-size: 65%; */
 }
 
 /* image stylings */
@@ -221,6 +299,10 @@ input, select, button {
     }
 }
 
+.list_of_cities {
+    color: black;
+}
+
 /* #home-image {
     padding: 0;
     display: block;
@@ -228,3 +310,16 @@ input, select, button {
     max-height: 100vh;
     max-width: 100%;
 } */
+
+.add-wrapper {
+    width: 70%;
+}
+
+.add-wrapper > h1 {
+    text-align: center;
+        
+}
+
+.add-wrapper button {
+    text-align: center;
+}

@@ -8,9 +8,11 @@
 
     <div class="welcome-message">
         <h1>Create your ultimate travel wishlist...</h1>
-    </div>
 
-    <div></div>
+        <div>
+            <a href="{{ url_for('countries.list_all_countries') }}"><button type="button"><span></span>Start exploring today!</button></a>
+        </div>
+    </div>
 
 
 {% endblock home %}

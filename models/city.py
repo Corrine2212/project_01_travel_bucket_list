@@ -7,3 +7,4 @@ class City:
 
     def mark_visited(self):
         self.visited = True
+

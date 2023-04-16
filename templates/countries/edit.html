@@ -1,19 +1,31 @@
 {% extends 'base.html' %}
-{% block content %}
 
+{% block content %}
     <header>
         <h1>Edit destination</h1>
     </header>
 
     <form action="/countries/{{ country.id }}" method="POST">
+        {# <div>
+            <label for="country_name">Country:</label>
+            <input type="text" id="country_name" name="country_name" value="{{ country.country_name }}" placeholder="Which country? e.g. Japan, Scotland" required autofocus>
+        </div> #}
+
         <div>
             <label for="country_name">Country:</label>
-            <input type="text" id="country_name" name="country_name" placeholder="Which country? e.g. Japan, Scotland" required autofocus>
+            <select id="country" name="country_id">
+                {% for country in all_countries %}
+                    <option value="{{ country.country_id }}"
+                        {% if city.country.id== country.id %} selected="selected"{% endif %}>
+                        {{ country.name }}
+                    </option>
+                {% endfor %}
+            </select>
         </div>
 
         <div>
             <label for="city_name">City:</label>
-            <input type="text" id="city_name" name="city_name"placeholder="Which city? e.g. Tokyo, Edinburgh" required autofocus>
+            <input type="text" id="city_name" name="city_name" placeholder="Which city? e.g. Tokyo, Edinburgh" required>
         </div>
 
         <div>
