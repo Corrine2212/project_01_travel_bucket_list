@@ -35,7 +35,7 @@ def select_all():
 
     for row in results:
         country = country_repository.select(row['country_id'])
-        city = City(row['name'], country, row['visited'], row['id'])
+        city = City(row['city_name'], country, row['visited'], row['id'])
         cities.append(city)
     return cities
 
@@ -54,5 +54,5 @@ def delete_all():
 # update
 def update(city):
     sql = "UPDATE cities SET (city_name, country_id, visited) = (%s, %s, %s) WHERE id = %s"
-    values = [city.name, city.country.id, city.visited, city.id]
+    values = [city.city_name, city.country.id, city.visited, city.id]
     run_sql(sql, values)

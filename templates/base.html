@@ -11,26 +11,30 @@
     <header>
         <nav>
             <ul class="menu">
-                <li><a href="{{ url_for('home') }}">Home</a></li>
-                <li><a href="{{ url_for('countries.list_all_countries') }}">Countries</a></li>
-                <li><a href="{{ url_for('countries.new_country') }}">Add a new country</a></li>
+                <a href="{{ url_for('home') }}"><img class="logo" src="/static/images/JETSETGO.png"></a>
+                <div class="nav-options">
+                    <li><a href="{{ url_for('home') }}">HOME</a></li>
+                    <li><a href="{{ url_for('countries.list_all_countries') }}">MY BUCKETLIST</a></li>
+                    <li><a href="{{ url_for('countries.new_country') }}">ADD DESTINATION</a></li>
+                </div>
             </ul>
         </nav>
     </header>
 
-<main>
-    <div class="container">
-        {% block content %}
-        {% endblock content %}
-    </div>
+    <main>
+        <div class="container">
+            {% block content %}
+            {% endblock content %}
+        </div>
 
-    {% block home %}
-    {% endblock home %}
+        {% block home %}
+        {% endblock home %}
 
-</main>
+    </main>
+    <footer>
+        <p>This is the footer. Powered by seagulls</p>
+        <p>Contact us</p>
+    </footer>
 </body>
 
-<footer>
-    This is the footer. Powered by...
-</footer>
 </html>

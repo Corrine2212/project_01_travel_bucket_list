@@ -7,17 +7,21 @@
             <a href="/countries/{{ country.id }}">{{ country.country_name }}</a>
 
             <div class="name">
-                more information to be added
+                <p>list of cities</p>
             </div>
 
-            <div class="buttons">
-                <form class="delete-form" action="/countries/{{ country.id }}/delete" method="POST">
-                    <button class="trash-button">DELETE</button>
-                </form>
+                <div class="buttons">
+                    <form class="edit-form" action="/countries/{{ country.id }}/edit">
+                        <button class="edit-button">EDIT</button>
+                    </form>
+                    <form class="delete-form" action="/countries/{{ country.id }}/delete" method="POST">
+                        <button class="trash-button">DELETE</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-
+    
 {% endfor %}
 
 {% endblock %}

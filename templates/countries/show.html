@@ -1,12 +1,25 @@
 {% extends 'base.html' %}
 {% block content %}
     
-    <div>
-        <p>{{ country.name }}</p>
-        <hr>
-        <p>more information to add here</p>
-        <p><a href="/countries/{{ country.id }}/edit"></>Edit</p>
+<section>
+    <h2>{{ country.country_name }}</h2>
+    <hr>
+
+    <div class="country-details">
+        {# <p>
+            list of city names
+        </p> #}
+        <div class="buttons">
+            <form class="edit-form" action="/countries/{{ country.id }}/edit">
+                <button class="edit-button">EDIT</button>
+            </form>
+            <form class="delete-form" action="/countries/{{ country.id }}/delete" method="POST">
+                <button class="trash-button">DELETE</button>
+            </form>
+        </div>
     </div>
+
+</section>
 
 {% endblock %}
 

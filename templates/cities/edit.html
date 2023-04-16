@@ -1,13 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
 
+    <header>
+        <h1>Edit city</h1>
+    </header>
+    
     <form action="/cities/{{ city.id }}" method="POST">
         <div>
-            <label for="city_name">City name</label>
+            <label for="city_name">City:</label>
             <input type="text" id="city_name" placeholder="City name" required autofocus>
+
+            <label for="visited">Visited:</label>
+            <select id="visited" name="visited">
+                <option value="True">Visited</option>
+                <option value="False">Not Visited</option>
+            </select>
         </div>
 
-        <button type="submit">Update City</button>
+        <button type="submit">Save changes</button>
     </form>
 
 {% endblock %}
