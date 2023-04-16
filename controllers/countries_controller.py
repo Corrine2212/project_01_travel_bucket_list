@@ -27,10 +27,10 @@ def new_country():
 @countries_blueprint.route('/countries', methods=['POST'])
 def create_country():
     country_name = request.form['country_name']
-    city_id = request.form['city_id']
     visited = request.form['visited']
-    city = city_repository.select(city_id)
-    country = Country(country_name, city, visited)
+    # city_id = request.form['city_id']
+    # city = city_repository.select(city_id)
+    country = Country(country_name, visited)
     country_repository.save(country)
     return redirect('/countries')
 
