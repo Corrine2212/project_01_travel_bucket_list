@@ -47,6 +47,7 @@ def update(country):
     values = [country.country_name, country.visited, country.id]
     run_sql(sql, values)
 
+# !is this required? the city repository should have this function
 def cities(country):
     cities = []
 
@@ -58,3 +59,4 @@ def cities(country):
         city = City(row['city_name'], country, row['visited'], row['id'])
         cities.append(city)
         return cities
+    

@@ -1,11 +1,12 @@
 from db.run_sql import run_sql
+
 from models.city import City
 from models.country import Country
 import repositories.country_repository as country_repository
 
 # save 
 def save(city):
-    sql = "INSERT INTO books (city_name, country_id, visited) VALUES (%s, %s, %s,) RETURNING *"
+    sql = "INSERT INTO cities (city_name, country_id, visited) VALUES (%s, %s, %s,) RETURNING *"
     values = [city.name, city.country.id, city.visited ]
     results = run_sql(sql, values)
     id = results[0]['id']
@@ -22,7 +23,7 @@ def select(id):
     if results:
         result = results[0]
         country = country_repository.select(result['country_id'])
-        city = City(result['name'], country, result['visited'])
+        city = City(result['city_name'], country, result['visited'], result['id'])
     return city
 
 # select_all
@@ -34,7 +35,7 @@ def select_all():
 
     for row in results:
         country = country_repository.select(row['country_id'])
-        city = City(row['name'], country, row['visited'])
+        city = City(row['name'], country, row['visited'], row['id'])
         cities.append(city)
     return cities
 
@@ -53,5 +54,5 @@ def delete_all():
 # update
 def update(city):
     sql = "UPDATE cities SET (city_name, country_id, visited) = (%s, %s, %s) WHERE id = %s"
-    values = [city.name, city.country.id, city.visited]
+    values = [city.name, city.country.id, city.visited, city.id]
     run_sql(sql, values)

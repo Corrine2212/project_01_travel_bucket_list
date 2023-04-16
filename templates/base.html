@@ -5,29 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>JetSetGoHomepage</title>
+    <title>JetSetGo</title>
 </head>
 <body>
     <header>
         <nav>
             <ul class="menu">
-                <li><a href="{{ url_for('home') }}"></li>
-                <li><a href="{{ url_for('countries.countries') }}">Countries</li>
-                <li><a href="{{ url_for('countries.new_countries') }}">Add a new country</li>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('countries.countries') }}">Countries</a></li>
+                <li><a href="{{ url_for('countries.new_country') }}">Add a new country</a></li>
             </ul>
         </nav>
     </header>
 
+<main>
     <div class="container">
         {% block content %}
-        {% endblock %}
+        {% endblock content %}
     </div>
 
     {% block home %}
-    {% endblock %}
+    {% endblock home %}
+
+</main>
 </body>
 
 <footer>
-    This is the footer.
+    This is the footer. Powered by...
 </footer>
 </html>

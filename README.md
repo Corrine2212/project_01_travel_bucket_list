@@ -25,7 +25,13 @@ For the last 4 weeks i've been learning Python, HTML, CSS, Flask framework, Djin
 ...
 
 ## How to install and run the project:
-...
+1. Open files in editor e.g. Visual Studio Code
+2. Create database: 'travel_bucket_list.sql' - From `dropdb travel_bucket_list` then run `createdb travel_bucket_list`
+3. Run psql in the terminal to initiate the database `psql -d -f travel_bucket_list.sql`
+4. Run console.py file using command `python3 console.py`
+5. Run Flask using command `flask run`
+6. Access webpage using url: http://localhost:4999
+7. To exit Flask, use CTRL + C in the terminal 
 
 ## How to use the project
 include screenshots

@@ -1,13 +1,16 @@
 from flask import Flask, render_template, request, redirect
 from flask import Blueprint
+
 from models.city import City
+from models.country import Country
 import repositories.city_repository as city_repository
 import repositories.country_repository as country_repository
 
 cities_blueprint = Blueprint("cities", __name__)
 
+# INDEX
 @cities_blueprint.route('/cities')
-def cities():
+def list_all_cities():
     cities = city_repository.select_all()
     return render_template('cities/index.html', all_cities = cities)
 
@@ -23,11 +26,11 @@ def new_city():
 # POST '/cities'
 @cities_blueprint.route('/cities', methods=['POST'])
 def create_city():
-    city_name = request.form['city_name']
+    new_city_name = request.form['city_name']
     country_id = request.form['country_id']
     visited = request.form['visited']
     country = country_repository.select(country_id)
-    city = City(city_name, country, visited)
+    city = City(new_city_name, country, visited)
     city_repository.save(city)
     return redirect('/cities')
 
@@ -54,13 +57,13 @@ def update_city(id):
     country_id = request.form['country_id']
     visited = request.form['visited']
     country = country_repository.select(country_id)
-    city = City(city_name, country, visited)
-    city_repository.save(city)
+    city = City(city_name, country, visited, id)
+    city_repository.update(city)
     return redirect('/cities')
 
 # DELETE
 # DELETE '/cities/<id>'
-@cities_blueprint.route('/cities/<id>', methods=["POST"])
+@cities_blueprint.route('/cities/<id>/delete', methods=["POST"])
 def delete_city(id):
     city_repository.delete(id)
     return redirect('/cities')
