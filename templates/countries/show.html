@@ -1,34 +1,37 @@
 {% extends 'base.html' %}
 {% block content %}
     
-<div class="country">
-    <div class="content">
+<div class="add-wrapper">
+    <h1>{{ country.country_name }}</h1>
 
-    <h2>{{ country.country_name }}</h2>
-    <hr>
-
-{# !not displaying list #}
-    <ul>
-        {% for city in cities  %}
-        <li>{{city.city_name}}</li>
-        {% endfor %}
-    </ul>
-    <p>show list of cities here</p>
-    <hr>
-    <p>add link to cities / edit and delete buttons</p>
+        {% for city in all_cities %}
+        <div class="country">
+            <div class="content">
+                <i class="fa fa-thumb-tack fa-2x" aria-hidden="true"></i>
     
+        {% if city.country.id == country.id %} 
+                <h1>{{ city.city_name }}</h1>
+                
 
-        <div class="buttons">
-            <form class="edit-form" action="/countries/{{ country.id }}/edit">
-                <button class="edit-button">EDIT</button>
-            </form>
-            <form class="delete-form" action="/countries/{{ country.id }}/delete" method="POST">
-                <button class="trash-button">DELETE</button>
-            </form>
+            {% if city.visited %}
+            <p><i>Still to visit city</i></p>            
+            {% endif %}
+
+    {% endif %}
+
+            <div class="buttons">
+                <form class="edit-form" action="/cities/{{ city.id }}/edit">
+                    <button class="edit-button">EDIT</button>
+                </form>
+                
+                <form class="delete-form" action="/cities/{{ city.id }}/delete" method="POST">
+                    <button class="trash-button">DELETE</button>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 
+    {% endfor %}
 {% endblock content %}
 
 

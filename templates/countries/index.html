@@ -7,17 +7,19 @@
         <div class="content">
             <i class="fa fa-thumb-tack fa-2x" aria-hidden="true"></i>
             <h1>{{ country.country_name }}</h1>
-            <p>try to display list of cities and have edit and delete option</p>
+            <p>Cities to visit...</p>
             <ul>
-                {% for city in cities %}
+                {% for city in all_cities %}
+                {% if city.country.id == country.id%}
                     <li class="list-of-cities" >{{ city.city_name }}</li>
+                {% endif %}
                 {% endfor %}
             </ul>
 
             {% if country.visited %}
-            <p><i>Visited</i></p>
+            <p><i>Visited country</i></p>
                 {% else: %}
-                <p><i>Still to visit</i></p>
+                <p><i>Still to visit country</i></p>
                 
             {% endif %}
 
