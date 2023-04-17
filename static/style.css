@@ -1,3 +1,31 @@
+/* ?POTENTIAL GRID STYLING */
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  
+  .countries-cities {
+    border: 1px solid #565656;
+    border-radius: 10px;
+    min-height: 68px;
+    padding: 20px;
+    text-align: center;
+    line-height: 18px;
+  }
+  
+  .countries {
+    grid-row: 1 / span 2;
+  }
+  
+  .cities {
+    grid-column: 2;
+  }
+   */
+
+
 /* body stylings */
 body{
     font-family: "Helvetica", arial, sans-serif; font-size: 16px;
@@ -7,9 +35,6 @@ body{
     display: flex;
     flex-direction: column ;
 }
-
-
-/* header stylings */
 
 /* footer stylings */
 footer{
@@ -33,35 +58,21 @@ section {
     margin-bottom: 20px; 
 }
 
-/* .container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 300px;
-    margin: 0 auto;
-
-} */
+/* font, stylings */
+span {
+    size: 12px;
+    content
+}
 
 .container{
     display: flex;
     flex-wrap: wrap;
-    width: 700px;
+    width: 100%;
     margin: 0 auto;
     justify-content: space-evenly;
 }
 
-.country {
-    border: 1px solid #565656;
-    border-radius: 10px;
-    width: 250px;
-    min-height: 68px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    line-height: 18px;
-    margin-top: 50px;
-}
+
 
 .welcome-message {
     width: 100%;
@@ -79,17 +90,22 @@ section {
     
 }
 
-.name {
-    font-weight: bold;
-    margin-bottom: 0.5em;
-    margin-right: 0.3em;
+.content ol {
+    /* list-style: none; */
+    display: inline-block;
+    margin: 0 20px;
+    color: black;
+    font-family: "Helvetica", arial, sans-serif; 
+    font-size: 14px;
+    position: relative;
+    padding-left: 0;
+    padding-bottom: 10px;
 }
 
-.publisher{
-    color: #8899a6;
-    font-size: 13px;
-    margin-left: 20px;
+.content li {
+    margin-bottom: 5px;
 }
+
 
 /* buttons stylings */
 .buttons {
@@ -144,14 +160,16 @@ input, select, button {
     cursor: pointer;
     text-align: center;
     margin: 0 auto;
-
+    display: block;
+    margin-top: 15px;
+    
 }
 
 
 #submit:hover {
     background-color: #3b799f;
     /* box-shadow: 0 10px 12px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
-
+    
 }
 
 .delete-form {
@@ -175,41 +193,6 @@ button {
 button:hover {
     background: #57aee5;
 }
-/* button {
-    width: 200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid #009688;
-    background: transparent;
-    color: #fff;
-    cursor:pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-span {
-    background: #009688;
-    height: 100%;
-    width: 100%;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;   
-    z-index: -1;
-    transition: 0.5s;
-}
-
-button:hover span {
-    width: 100%;
-
-}
-
-button:hover {
-    border: none;
-} */
 
 /* menu stylings */
 .logo {
@@ -245,8 +228,9 @@ button:hover {
 
 .menu li a:visited:hover {
     color: lightblue;
-
+    
 }
+
 
 .menu li {
     list-style: none;
@@ -273,10 +257,24 @@ button:hover {
     width: 100%;
 }
 
-.fa.fa-thumb-tack{
-    color: lightcoral;
+/* icon stylings */
+.fa.fa-location-dot {
+    color: rgb(240, 128, 128);
     display: contents;
-    /* font-size: 65%; */
+}
+
+.fa-solid,
+.fa-square-check {
+    display: contents;
+    margin-left: 10px;
+    color: black;
+}
+
+.fa-solid,
+.fa-xmark {
+    display: contents;
+    margin-left: 10px;
+    color: black;
 }
 
 /* image stylings */
@@ -294,15 +292,102 @@ button:hover {
 
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
     #home-image {
-    left: 50%;
-      margin-left: -512px;   /* 50% */
+        left: 50%;
+        margin-left: -512px;   /* 50% */
     }
+}
+/* country and city stylings */
+.countries-cities {
+    border: 1px solid #565656;
+    border-radius: 10px;
+    width: 220px;
+    min-height: 68px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    line-height: 18px;
+    margin-top: 50px;
+}
+
+.countries {
+    border: 1px solid #565656;
+    border-radius: 10px;
+    width: 220px;
+    min-height: 68px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    line-height: 18px;
+    margin-top: 50px;
+}
+
+.cities {
+    border: 1px solid #565656;
+    border-radius: 10px;
+    width: 220px;
+    min-height: 68px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    line-height: 18px;
+    margin-top: 20px;
+}
+
+.country-wrapper {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 1000px;
 }
 
 .list_of_cities {
     color: black;
 }
 
+.add-wrapper {
+    width: 30%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.add-wrapper > h1 {
+    text-align: center;
+    
+}
+
+.add-wrapper button {
+    text-align: center;
+}
+
+
+.add-wrapper-cities {
+    width: 70%;
+    margin-top: 30px;
+}
+
+.add-wrapper-cities > h1 {
+    text-align: center;
+    
+    
+}
+
+.add-wrapper-cities button {
+    text-align: center;
+}
+.city-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* ! not in use */
 /* #home-image {
     padding: 0;
     display: block;
@@ -311,15 +396,59 @@ button:hover {
     max-width: 100%;
 } */
 
-.add-wrapper {
-    width: 70%;
+/* button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor:pointer;
+    position: relative;
+    overflow: hidden;
 }
 
-.add-wrapper > h1 {
-    text-align: center;
-        
+span {
+    background: #009688;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;   
+    z-index: -1;
+    transition: 0.5s;
 }
 
-.add-wrapper button {
-    text-align: center;
+button:hover span {
+    width: 100%;
+    
 }
+
+button:hover {
+    border: none;
+} */
+
+/* .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0 auto;
+    
+} */
+
+/* .name {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-right: 0.3em;
+}
+
+.publisher{
+    color: #8899a6;
+    font-size: 13px;
+    margin-left: 20px;
+} */

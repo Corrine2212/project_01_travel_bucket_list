@@ -2,15 +2,27 @@
 {% block content %}
     
 {% for city in all_cities %}
-    <div class="city">
+    <div class="countries-cities">
         <div class="content">
-            <a href="/cities/{{ city.id }}">{{ city.name }}</a>
+            <i class="fa fa-thumb-tack fa-2x" aria-hidden="true"></i>
+            <h1>{{ city.name }}</h1>
 
-            <div class="name">
-                more information to be added
-            </div>
+            {% if city.visited %}
+            <p><i>Visited city</i></p>
+                {% else: %}
+                <p><i>Still to visit city</i></p>
+                
+            {% endif %}
 
             <div class="buttons">
+                <form class="view-more" action="/cities/{{ city.id }}">
+                        <button class="view-button">VIEW</button>
+                </form>
+
+                <form class="edit-form" action="/cities/{{ city.id }}/edit">
+                    <button class="edit-button">EDIT</button>
+                </form>
+
                 <form class="delete-form" action="/cities/{{ city.id }}/delete" method="POST">
                     <button class="trash-button">DELETE</button>
                 </form>
@@ -20,4 +32,4 @@
 
 {% endfor %}
 
-{% endblock %}
+{% endblock content %}

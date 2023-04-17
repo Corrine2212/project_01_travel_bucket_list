@@ -22,7 +22,6 @@ def list_all_countries():
 def new_country():
     return render_template("countries/new.html")
 
-# !check this function
 # CREATE
 # POST '/countries'
 @countries_blueprint.route('/countries', methods=['POST'])

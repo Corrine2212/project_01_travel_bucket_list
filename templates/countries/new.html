@@ -5,27 +5,28 @@
     <h1>Add a new destination</h1>
 
 
-<form action="/countries" method="POST">
-    <div>
-        <label for="country_name">Where to?</label>
-        <input type="text" id="country_name" name="country_name" placeholder="Which country? e.g. Japan, Scotland" required autofocus>
-    </div>
+    <form action="/countries" method="POST">
+        <div>
+            <label for="country_name">Where to?</label>
+            <input type="text" id="country_name" name="country_name" placeholder="Which country? e.g. Japan, Scotland" required autofocus>
+        </div>
 
-    <div>
+{# !DOESNT WORK #}
+    {# <div>
         <label for="city_name">City:</label>
         <input type="text" id="city_name" name="city_name" placeholder="Which city? e.g. Tokyo, Edinburgh" required autofocus>
-    </div>
+    </div> #}
 
-    <div>
-        <label for="visited">Visited:</label>
-        <select id="visited" name="visited">
-            <option value="True">Visited</option>
-            <option value="False">Not Visited</option>
-        </select>
-    </div>
+        <div>
+            <label for="visited">Visited:</label>
+            <select id="visited" name="visited">
+                <option value="True">Visited</option>
+                <option value="False">Not Visited</option>
+            </select>
+        </div>
 
-    <button id="submit" type="submit">Add destination</button>
-</form>
+        <button id="submit" type="submit">Add destination</button>
+    </form>
     
 </div>
 {% endblock %}

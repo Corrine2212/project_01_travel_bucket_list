@@ -1,13 +1,19 @@
 {% extends 'base.html' %}
 {% block content %}
     
-<div class="add-wrapper">
+<div class="add-wrapper-cities">
     <h1>{{ country.country_name }}</h1>
-
-        {% for city in all_cities %}
-        <div class="country">
+    <div class="city-wrapper">
+        <div class="cities">
             <div class="content">
-                <i class="fa fa-thumb-tack fa-2x" aria-hidden="true"></i>
+                <i class="fa-solid fa-location-dot fa-2x" style="color: #f08080;"></i>
+                <h2>City name</h2>
+                <p>add a edit button and delete button for cities here</p>
+
+        {% for city in cities_by_country %}
+        <div class="cities">
+            <div class="content">
+                <i class="fa-solid fa-location-dot fa-2x" style="color: #f08080;"></i>
     
         {% if city.country.id == country.id %} 
                 <h1>{{ city.city_name }}</h1>
@@ -17,7 +23,6 @@
             <p><i>Still to visit city</i></p>            
             {% endif %}
 
-    {% endif %}
 
             <div class="buttons">
                 <form class="edit-form" action="/cities/{{ city.id }}/edit">
@@ -29,9 +34,11 @@
                 </form>
             </div>
         </div>
-    </div>
 
+        {% endif %}
     {% endfor %}
+    </div>
+</div>
 {% endblock content %}
 
 

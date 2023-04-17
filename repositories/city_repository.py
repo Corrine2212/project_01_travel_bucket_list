@@ -59,13 +59,13 @@ def update(city):
 
 
 def cities_by_country(country):
-    cities = []
+    cities_by_country = []
 
-    sql = "SELECT * FROM countries WHERE country_id = %s"
-    values = [country.id]
+    sql = "SELECT * FROM cities WHERE country_id = %s"
+    values = [city.country.id]
     results = run_sql(sql, values)
 
     for row in results:
         city = City(row['city_name'], country, row['visited'], row['id'])
-        cities.append(city)
-        return cities
+        cities_by_country.append(city)
+        return cities_by_country

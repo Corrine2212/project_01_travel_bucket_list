@@ -1,32 +1,34 @@
 {% extends 'base.html' %}
 {% block content %}
 
+<div class="country-wrapper">
 {% for country in all_countries %}
-
-    <div class="country">
+    <div class="countries-cities">
         <div class="content">
-            <i class="fa fa-thumb-tack fa-2x" aria-hidden="true"></i>
+            <i class="fa-solid fa-location-dot fa-2x" style="color: #f08080" aria-hidden="true"></i>
             <h1>{{ country.country_name }}</h1>
             <p>Cities to visit...</p>
-            <ul>
+            <ol>
                 {% for city in all_cities %}
                 {% if city.country.id == country.id%}
                     <li class="list-of-cities" >{{ city.city_name }}</li>
                 {% endif %}
                 {% endfor %}
-            </ul>
+            </ol>
 
+            <hr>
             {% if country.visited %}
-            <p><i>Visited country</i></p>
+            <p><b>Visited?</b><span style="font-size: 1.2em;"><i class="fa-solid fa-square-check" aria-hidden="true"></i></span>
                 {% else: %}
-                <p><i>Still to visit country</i></p>
+                <p><b>Visited?</b><span style="font-size: 1.2em;"><i class="fa-solid fa-xmark" aria-hidden="true"></i></span>
                 
             {% endif %}
-
+            <hr>
                 <div class="buttons">
                     <form class="view-more" action="/countries/{{ country.id }}">
                         <button class="view-button">VIEW</button>
                     </form>
+
                     <form class="edit-form" action="/countries/{{ country.id }}/edit">
                         <button class="edit-button">EDIT</button>
                     </form>
@@ -34,8 +36,9 @@
                         <button class="trash-button">DELETE</button>
                     </form>
                 </div>
-            </div>
         </div>
+    </div>
 
 {% endfor %}
+</div> 
 {% endblock content %}
