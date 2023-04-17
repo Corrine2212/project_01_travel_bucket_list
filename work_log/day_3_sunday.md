@@ -1,4 +1,4 @@
-# Work Log - day 1 - Friday 14th April
+# Work Log - day 3 - Sunday 16th April
 
 ### What I did/worked on:
 - ran flask and everything went to shit
@@ -11,6 +11,7 @@
 - fix edit function - it's not displaying the current information and also not saving it to that country.
 - fix show single country page - not displaying the list of cities and no visited select box.
 - add button to dashboard/list of all destinations
+- center submit buttons
 
 ### Have I learned anything new / takeaways?
 - 

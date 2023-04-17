@@ -1,4 +1,4 @@
-# Work Log - day 1 - Friday 14th April
+# Work Log - day 2 - Saturday 15th April
 
 ### What I did/worked on:
 - added a country controller

@@ -3,8 +3,8 @@ DROP TABLE IF EXISTS countries;
 
 CREATE TABLE countries (
     id SERIAL PRIMARY KEY,
-    country_name VARCHAR(255) NOT NULL
-    
+    country_name VARCHAR(255) NOT NULL,
+    visited BOOLEAN DEFAULT FALSE
 );
 
 CREATE TABLE cities (

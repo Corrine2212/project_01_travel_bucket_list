@@ -14,6 +14,13 @@
                 {% endfor %}
             </ul>
 
+            {% if country.visited %}
+            <p><i>Visited</i></p>
+                {% else: %}
+                <p><i>Still to visit</i></p>
+                
+            {% endif %}
+
                 <div class="buttons">
                     <form class="view-more" action="/countries/{{ country.id }}">
                         <button class="view-button">VIEW</button>

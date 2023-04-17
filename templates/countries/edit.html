@@ -1,14 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <header>
-        <h1>Edit destination</h1>
-    </header>
+<div class="add-wrapper">
+    <h1>Edit destination</h1>
 
-    <form action="/countries/{{ country.id }}" method="POST">
-        {# <div>
+    {# <form action="/countries/{{ country.id }}" method="POST">
+        <div>
             <label for="country_name">Country:</label>
-            <input type="text" id="country_name" name="country_name" value="{{ country.country_name }}" placeholder="Which country? e.g. Japan, Scotland" required autofocus>
+            <input type="text" id="country" name="country_id" value="{{ country.country_name }}" required autofocus>
         </div> #}
 
         <div>
@@ -38,5 +37,6 @@
 
         <button id="submit" type="submit">Update Country</button>
     </form>
+</div>
 
 {% endblock %}
