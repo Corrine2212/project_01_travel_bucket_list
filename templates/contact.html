@@ -1,9 +1,17 @@
-{% extends 'base.html' %}
-{% block home %}
+{% extends 'base.html' %} {% block home %}
 
-<h1>Contact us</h1>
+<div id="contact-banner"></div>
 
-<p>If you need help with an issue or would like to see new features added, get in touch!</p>
-<p>Corrine Sing - corrine.sing@gmail.com</p>
+<div id="contact-page">
+  <h1 id="contact-name-wrapper">Contact us</h1>
+
+  <p>
+    If you need help with an issue or would like to see new features added, get
+    in touch!
+  </p>
+
+    <a href="mailto:corrine.sing@gmail.com"><button id="email-me-button">Email me!</button></a>
+
+</div>
 
 {% endblock home %}

@@ -27,7 +27,7 @@
 
 
 /* body stylings */
-body{
+body {
     font-family: "Helvetica", arial, sans-serif; font-size: 16px;
     margin: 0;
     height: 100%;
@@ -36,8 +36,8 @@ body{
     flex-direction: column ;
 }
 
-/* footer stylings */
-footer{
+/* footer related stylings */
+footer {
     display: flex;
     justify-content: space-between;
     background-color: grey;
@@ -62,13 +62,88 @@ section {
     margin-bottom: 20px; 
 }
 
+#contact-link a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#contact-link a:hover {
+    color:#57aee5;
+}
+
+#contact-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#contact-page > p {
+    font-size: 20px;
+}
+
+#contact-banner {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.1)), url('images/markus-spiske-iar-afB0QQw-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top top;
+}
+
+#contact-name-wrapper {
+    position: absolute;
+    top: 28%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: white;
+    text-shadow: 
+    1px 0px 1px #565656, 0px 1px 5px #000000;
+    font-size: 50px;
+}
+
+#email-me-button {
+    border-radius: 15px;
+    border: none;
+    background-color: #57aee5;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 15px;
+    width: 130px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#email-me-button:hover {
+    background-color: #3b799f;
+    /* box-shadow: 0 10px 12px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
+    
+}
+
 /* font, stylings */
 span {
     size: 12px;
     content
 }
 
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -220,8 +295,8 @@ button:hover {
     background-color: grey;
     color: white;
     margin: 0;
-    /* background:rgba(0,0,0,.20);
-    backdrop-filter: blur(5px); */
+    background:rgba(0,0,0,.20);
+    backdrop-filter: blur(5px);
 }
 
 .menu li a {    
