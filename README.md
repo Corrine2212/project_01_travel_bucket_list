@@ -10,23 +10,21 @@ The app had to meet the following criteria:
   - each country should have one or more cities to visit
   - the user should be able to create and delete entries for cities
   - the app should allow the user to mark destinations as visited or still to see.
-  
-**For extra functionality/features, I could include:**
-  - seperate pages for destinations visited and those still to visit
-  - add sights to the destination cities
-  - search for destination by continent, city or country
-  - ability to upload pictures and have them displayed on thumbnails
-  - extra input fields for notes and date to visit place
 
 ### Technologies used and why?
-For the last 4 weeks i've been learning Python, HTML, CSS, Flask framework, Djinja and psql to build a full stack web application. The aim of this project was to consolidate everything that i've learned using the aforementioned languages and framework.
+For the last 4 weeks i've been learning Python, HTML, CSS, Flask framework, Djinja, PostgreSQL, psycopg2 to build a full stack web application. The aim of this project was to consolidate everything that i've learned using the aforementioned languages and framework.
 
 ### Challenges faced and features I hope to implement in the future:
-...
+For extra functionality/features, I could include:
+  - separate pages for destinations visited and those still to visit
+  - add sights to the destination cities
+  - search for destination by continent, city or country
+  - ability to upload pictures and have them displayed as thumbnails
+  - extra input fields for notes and date to visit place
 
 ## How to install and run the project:
 1. Open files in editor e.g. Visual Studio Code
-2. Create database: 'travel_bucket_list.sql' - From `dropdb travel_bucket_list` then run `createdb travel_bucket_list`
+2. Create database: 'travel_bucket_list.sql' - Run `dropdb travel_bucket_list` then `createdb travel_bucket_list`
 3. Run psql in the terminal to initiate the database `psql -d -f travel_bucket_list.sql`
 4. Run console.py file using command `python3 console.py`
 5. Run Flask using command `flask run`
@@ -34,7 +32,7 @@ For the last 4 weeks i've been learning Python, HTML, CSS, Flask framework, Djin
 7. To exit Flask, use CTRL + C in the terminal 
 
 ## How to use the project
-include screenshots
+[include screenshots?]
 
 
 ## Thanks for your time...
