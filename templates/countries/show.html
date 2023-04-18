@@ -1,26 +1,25 @@
 {% extends 'base.html' %}
 {% block content %}
     
+
 <div class="add-wrapper-cities">
     <h1>{{ country.country_name }}</h1>
+   
     <div class="city-wrapper">
-        <div class="cities">
-            <div class="content">
-                <i class="fa-solid fa-location-dot fa-2x" style="color: #f08080;"></i>
-                <h2>City name</h2>
-                <p>add a edit button and delete button for cities here</p>
-
-        {% for city in cities_by_country %}
-        <div class="cities">
+        {% for city in all_cities %}
+        {% if city.country.id == country.id  %} 
+        <div class="countries-cities">
             <div class="content">
                 <i class="fa-solid fa-location-dot fa-2x" style="color: #f08080;"></i>
     
         {% if city.country.id == country.id %} 
-                <h1>{{ city.city_name }}</h1>
+                <h2>{{ city.city_name }}</h3>
                 
 
             {% if city.visited %}
-            <p><i>Still to visit city</i></p>            
+            <p><b>Visited?</b><span style="font-size: 1.2em;"><i class="fa-solid fa-square-check" aria-hidden="true"></i></span>
+                {% else: %}
+                <p><b>Visited?</b><span style="font-size: 1.2em;"><i class="fa-solid fa-xmark" aria-hidden="true"></i></span>        
             {% endif %}
 
 
@@ -33,11 +32,14 @@
                     <button class="trash-button">DELETE</button>
                 </form>
             </div>
-        </div>
+            </div>
+        </div> 
+
 
         {% endif %}
+        {% endif %}
     {% endfor %}
-    </div>
+    </div>   
 </div>
 {% endblock content %}
 

@@ -16,6 +16,12 @@ def list_all_countries():
     cities = city_repository.select_all()
     return render_template('countries/index.html', all_countries = countries, all_cities = cities)
 
+@countries_blueprint.route('/countries/show')
+def list_cities_by_country(country_name):
+    country = country_repository.select(country_name)
+    cities = city_repository.select(country)
+    return render_template('cities/index.html', all_cities_by_country=cities)
+
 # NEW
 # GET '/countries/new'
 @countries_blueprint.route('/countries/new')
@@ -40,6 +46,7 @@ def create_country():
 def show_country(id):
     cities = city_repository.select_all()
     country = country_repository.select(id)
+    # filtered_cities = cities.filter(lambda city: city.id == country.city.id, cities )
     return render_template('countries/show.html', country = country, all_cities = cities)
 
 # EDIT

@@ -66,7 +66,7 @@ def update_city(id):
     country = country_repository.select(country_id)
     city = City(city_name, country, visited, id)
     city_repository.update(city)
-    return redirect('/countries')
+    return redirect('/countries/')
 
 # DELETE
 # DELETE '/cities/<id>'

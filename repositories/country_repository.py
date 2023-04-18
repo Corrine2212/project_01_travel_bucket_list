@@ -50,8 +50,6 @@ def update(country):
     run_sql(sql, values)
 
 
-
-
 # !is this required? the city repository should have this function
 # def cities(country):
 #     cities = []
