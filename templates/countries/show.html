@@ -1,14 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
     
+<div class="country-banner">
+</div>
 
 <div class="add-wrapper-cities">
-    <h1>{{ country.country_name }}</h1>
-   
+    <h1 class="country-name-wrapper">{{ country.country_name }}</h1>
+
     <div class="city-wrapper">
         {% for city in all_cities %}
         {% if city.country.id == country.id  %} 
-        <div class="countries-cities">
+        <div class="cities">
             <div class="content">
                 <i class="fa-solid fa-location-dot fa-2x" style="color: #f08080;"></i>
     

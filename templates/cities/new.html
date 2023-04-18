@@ -14,6 +14,7 @@
         <div>
             <label for="country">Country:</label>
             <select id="country" name="country_id">
+                <option value="" disabled selected>Select a Country</option>
             {% for country in all_countries %}
                 <option value="{{ country.id }}">{{ country.country_name }}</option>
             {% endfor %}
@@ -21,8 +22,9 @@
         </div>
 
         <div>
-            <label for="visited">Visited:</label>
+            <label for="visited">Visited?</label>
             <select id="visited" name="visited">
+                <i><option value="" disabled selected hidden>Select from dropdown</option></i>
                 <option value="True">Visited</option>
                 <option value="False">Not Visited</option>
             </select>

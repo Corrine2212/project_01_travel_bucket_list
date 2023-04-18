@@ -78,4 +78,6 @@ def delete_country(id):
     return redirect('/countries')
 
 
-
+@countries_blueprint.route('/countries')
+def contact_us():
+    return render_template('/countries/contact.html')
