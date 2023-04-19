@@ -1,7 +1,10 @@
-{% extends 'base.html' %}
+{% extends 'base_homepage.html' %}
+
+{% block menu_css %}
+    {{ super() }}
+{% endblock menu_css %}
+
 {% block home %}
-
-
     <div class="home-image">
         {# <img id="image" src="/static/images/xx-liu-1LP0OXRXV6o-unsplash.jpg" alt="photo of airplane window"> #}
     </div>
@@ -13,6 +16,4 @@
             <a href="{{ url_for('countries.list_all_countries') }}"><button type="button"><span></span>Start exploring today!</button></a>
         </div>
     </div>
-
-
 {% endblock home %}

@@ -14,12 +14,12 @@ def list_all_cities():
     cities = city_repository.select_all()
     return render_template('countries/index.html', all_cities = cities)
 
-#! NEW ROUTE ADDED FOR GETTING CITIES IN COUNTRY BLUEPRINT
-@cities_blueprint.route('/countries/show')
-def list_cities_by_country(country_name):
-    country = country_repository.select(country_name)
-    cities = city_repository.select(country)
-    return render_template('cities/index.html', all_cities_by_country=cities)
+# #! NEW ROUTE ADDED FOR GETTING CITIES IN COUNTRY BLUEPRINT
+# @cities_blueprint.route('/countries/show')
+# def list_cities_by_country(country_name):
+#     country = country_repository.select(country_name)
+#     cities = city_repository.select(country)
+#     return render_template('cities/index.html', all_cities_by_country=cities)
 
 # NEW - DON'T TOUCH
 # GET '/cities/new'
@@ -66,7 +66,7 @@ def update_city(id):
     country = country_repository.select(country_id)
     city = City(city_name, country, visited, id)
     city_repository.update(city)
-    return redirect('/countries/')
+    return redirect('/countries')
 
 # DELETE
 # DELETE '/cities/<id>'

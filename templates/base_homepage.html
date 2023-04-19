@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='menu-style.css') }}"
+    />
+    <script
+      src="https://kit.fontawesome.com/d7c1ab426a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>JetSetGo</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <a href="{{ url_for('home') }}"
+            ><img class="logo" src="/static/images/JETSETGO.png"
+          /></a>
+          <div class="nav-options">
+            <li><a href="{{ url_for('home') }}">HOME</a></li>
+            <li>
+              <a href="{{ url_for('countries.list_all_countries') }}"
+                >MY BUCKETLIST</a
+              >
+            </li>
+            <li>
+              <a href="{{ url_for('countries.new_country') }}"
+                >ADD DESTINATION</a
+              >
+            </li>
+            <li><a href="{{ url_for('cities.new_city') }}">ADD CITY</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">{% block content %} {% endblock content %}</div>
+
+      {% block home %} {% endblock home %}
+    </main>
+    <footer>
+      <p>Powered by seagulls</p>
+      <p>&copy JetSetGo</p>
+      <p id="contact-link"><a href="/contact">Contact us</a></p>
+    </footer>
+  </body>
+</html>

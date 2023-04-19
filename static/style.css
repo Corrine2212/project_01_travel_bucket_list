@@ -295,8 +295,6 @@ button:hover {
     background-color: grey;
     color: white;
     margin: 0;
-    background:rgba(0,0,0,.20);
-    backdrop-filter: blur(5px);
 }
 
 .menu li a {    
@@ -369,6 +367,8 @@ button:hover {
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
+    z-index: -1;
+    position: relative;
 }  
 
 .country-name-wrapper {
