@@ -50,16 +50,4 @@ def update(country):
     run_sql(sql, values)
 
 
-# !is this required? the city repository should have this function
-# def cities(country):
-#     cities = []
-
-#     sql = "SELECT * FROM countries WHERE country_id = %s"
-#     values = [country.id]
-#     results = run_sql(sql, values)
-
-#     for row in results:
-#         city = City(row['city_name'], country, row['visited'], row['id'])
-#         cities.append(city)
-#         return cities
     

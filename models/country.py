@@ -4,8 +4,5 @@ class Country:
         self.visited = visited
         self.id = id
 
-    # def get_cities(self):
-    #     return [city for city in all_cities if city.country == self]
-
     def mark_visited(self):
         self.visited = True
