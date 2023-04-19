@@ -492,3 +492,11 @@ button:hover {
     justify-content: space-evenly;
     margin-top: 0px;
 }
+
+.visited-countries-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}

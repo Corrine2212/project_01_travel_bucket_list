@@ -2,12 +2,13 @@
 {% block content %}
 
 <div class="country-wrapper">
+
 {% for country in all_countries %}
     <div class="countries-cities">
         <div class="content">
             <i class="fa-solid fa-location-dot fa-2x" style="color: #f08080" aria-hidden="true"></i>
             <h1>{{ country.country_name }}</h1>
-            <p>Cities to visit...</p>
+            <p><b>Cities to visit...</b></p>
             <ol>
                 {% for city in all_cities %}
                 {% if city.country.id == country.id%}

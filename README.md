@@ -1,4 +1,4 @@
-# project_01_travel_bucket_list
+# Project 1: JetSetGo - Travel Bucket List
 
 ## Project description:
 ### What does the application do?
@@ -31,10 +31,4 @@ For extra functionality/features, I could include:
 6. Access webpage using url: http://localhost:4999
 7. To exit Flask, use CTRL + C in the terminal 
 
-## How to use the project
-[include screenshots?]
-
-
-## Thanks for your time...
-Feel free to share any suggestions/improvements regarding this project or any  words of wisdom for a very new software developer - it'd be greatly appreciated!
 

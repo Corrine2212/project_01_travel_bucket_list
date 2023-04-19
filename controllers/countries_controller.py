@@ -13,14 +13,22 @@ countries_blueprint = Blueprint("countries", __name__)
 @countries_blueprint.route('/countries')
 def list_all_countries():
     countries = country_repository.select_all()
+    visited_countries = country_repository.select_visited_countries()
     cities = city_repository.select_all()
-    return render_template('countries/index.html', all_countries = countries, all_cities = cities)
+    return render_template('countries/index.html', all_countries=countries, visited_countries=visited_countries, all_cities=cities)
 
 @countries_blueprint.route('/countries/show')
 def list_cities_by_country(country_name):
     country = country_repository.select(country_name)
     cities = city_repository.select(country)
     return render_template('cities/index.html', all_cities_by_country=cities)
+
+
+@countries_blueprint.route('/countries/visited')
+def visited_countries():
+    visited_countries = country_repository.select_visited_countries()
+    return render_template('countries/visited_countries.html', visited_countries=visited_countries)
+
 
 # NEW
 # GET '/countries/new'

@@ -11,6 +11,22 @@ def save(country):
     country.id = id
     return country
 
+
+def select_visited_countries():
+    visited_countries = []
+
+    sql = "SELECT * FROM countries WHERE visited = %s"
+    values = [True]
+    results = run_sql(sql, values)
+
+    if results:
+        for row in results:
+            country = Country(row['country_name'], row['visited'], row['id'])
+            visited_countries.append(country)    
+            
+    return visited_countries
+
+
 def select(id):
     country = None
     sql = "SELECT * FROM countries WHERE id = %s"

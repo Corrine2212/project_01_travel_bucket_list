@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="country-banner"></div>
+<div class="add-wrapper-cities"></div>
+<h1 class="country-name-wrapper">Visited Countries</h1>
+
+    <div class="visited-countries-wrapper">
+    {% for country in visited_countries %}
+    <div class="cities">
+        <div class="content">
+        <i class="fa-solid fa-location-dot fa-2x" style="color: #f08080;"></i>
+    <h3>{{ country.country_name }}</h3>
+
+        </div>
+    </div>
+    {% endfor %}
+
+    </div>
+</div>
+{% endblock content %}
