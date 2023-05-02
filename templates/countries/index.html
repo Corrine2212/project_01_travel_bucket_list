@@ -1,7 +1,22 @@
 {% extends 'base.html' %}
 {% block content %}
 
+{# <div class="visited-filter-bar" >
+    
+</div> #}
+
 <div class="country-wrapper">
+
+{# 
+    FOR EACH country IN all_countries DO
+        OUTPUT country name
+    
+    FOR EACH city IN all_cities DO
+        IF city.country.id == country.id THEN
+            OUTPUT lists of city name
+        END IF
+    END FOR
+#}
 
 {% for country in all_countries %}
     <div class="countries-cities">
