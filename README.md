@@ -1,5 +1,16 @@
 # Project 1: JetSetGo - Travel Bucket List
 
+## Table of Contents
+- [Project 1: JetSetGo - Travel Bucket List](#project-1-jetsetgo---travel-bucket-list)
+  - [Table of Contents](#table-of-contents)
+  - [Demo:](#demo)
+  - [Project description:](#project-description)
+    - [What does the application do?](#what-does-the-application-do)
+    - [Technologies used and why?](#technologies-used-and-why)
+    - [Challenges faced and features I hope to implement in the future:](#challenges-faced-and-features-i-hope-to-implement-in-the-future)
+  - [How to install and run the project:](#how-to-install-and-run-the-project)
+
+## Demo:
 ![screencapture](./demo/jetsetgo_screenrecord.gif)
 
 ## Project description:
