@@ -1,5 +1,7 @@
 # Project 1: JetSetGo - Travel Bucket List
 
+![screencapture](./demo/jetsetgo_screenrecord.gif)
+
 ## Project description:
 ### What does the application do?
 This is my first ever CodeClan project! The brief I chose called for an app that could track someone's travel adventures.
@@ -34,7 +36,7 @@ For extra functionality/features, I could include:
 ## How to install and run the project:
 1. Open files in editor e.g. Visual Studio Code
 2. Create database: 'travel_bucket_list.sql' - Run `dropdb travel_bucket_list` then `createdb travel_bucket_list`
-3. Run psql in the terminal to initiate the database `psql -d -f travel_bucket_list.sql`
+3. From the directory where the database is located run psql in the terminal to initiate the database `psql -d travel_bucket_list -f travel_bucket_list.sql`
 4. Run console.py file using command `python3 console.py`
 5. Run Flask using command `flask run`
 6. Access webpage using url: http://localhost:4999
